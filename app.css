@@ -1,0 +1,844 @@
+body {
+    font-family: Georgia, Helvetica, serif;
+    font-style: oblique;
+    font-size: 1rem;
+    background-image: radial-gradient(#0000, #000 90%),
+    repeating-conic-gradient(from 20deg, #ccc 0deg 30deg, #282828 60deg 120deg);
+    background-position: fixed;
+    background-repeat: repeat-x;
+    color: whitesmoke;
+    height: 35em;
+    overflow: hidden;
+}
+
+input, button {
+    font: inherit;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+}
+
+input {
+    font-family: Georgia;
+    font-style: oblique;
+    background: #282828;
+    color: white;
+    border: #ccc 0.125em solid;
+}
+
+#uploadForm {
+    gap: 1.5rem;
+    padding: 0.125em;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #282828;
+    border: #ccc 0.025em solid;
+    color: white;
+    float: right;
+}
+
+.bob {
+    background: #282828;
+    padding: 0.125em;
+    font-size: 2em;
+    display: flex;
+    border-radius: 3vw;
+    border: #ccc 0.025em solid;
+}
+
+.bob1 {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background: #282828;
+    border: #ccc 0.025em solid;
+    color: white;
+    float: left;
+}
+
+#bob2 {
+    float: right;
+    padding-right: 0.8em;
+}
+
+#msg {
+    font-family: Georgia;
+    font-style: oblique;
+    border-radius: 3vw;
+    width: 13em;
+    min-height: 2.5em;
+    border: #ccc 0.025em solid;
+    float: left;
+    background: #282828;
+}
+
+.bob3 {
+    width: 0.025em;
+}
+
+.elm {
+    height: 30em;
+    overflow: auto;
+    flex: 1 1 0;
+    position: relative;
+}
+
+#icoo {
+    font-size: 1em;
+}
+
+#icop {
+    font-size: 6vw;
+}
+
+#icok {
+    font-size: 6vw;
+    flex-grow: 1.0;
+}
+
+.dialog {
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 1em;
+    text-align: center;
+    height: 10em;
+
+    overflow-y: none;
+    overflow-x: auto;
+}
+
+#icon {
+    font-size: 5em;
+    border-radius: 5vw;
+    border: #6683AF 0.125em solid;
+    text-align: center;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+#don, #full_name, #U_name, #pass, #phone {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 3vw;
+}
+
+#don {
+    font-size: bold;
+    font-family: Georgia;
+    font-style: oblique;
+    background: #6683AF;
+    color: white;
+}
+
+.flop, .flop1 {
+    flex-grow: 1.0;
+    display: flex;
+}
+
+.flop {
+    font-family: Georgia;
+    font-style: oblique;
+    width: 55%;
+}
+
+.flop1 {
+    width: 45%;
+    text-align: center;
+    padding: 0.025em;
+}
+
+#user {
+    font-family: Georgia;
+    font-style: oblique;
+    height: 2.5em;
+    border-radius: 3vw;
+    border: #A2A2A2 0.025em solid;
+}
+
+#holder {
+    display: flex;
+    border-radius: 3vw;
+    border: #ccc 0.025em solid;
+    background: #282828;
+}
+
+.img, .use, .noty, .notty, .imgic {
+    flex-grow: 1.0;
+}
+
+.img, .imgic {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.use {
+    width: 75%;
+}
+
+.noty {
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0.5;
+}
+
+.user_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    border: #ccc 0.125em solid;
+}
+
+#user_img {
+    text-align: center;
+}
+
+.name, .Uname, .phone, .id {
+    text-align: center;
+    font-size: bold;
+    height: 3em;
+    border-radius: 3vw;
+    border: #ccc 0.025em solid;
+    background: #282828;
+}
+
+.elm1 {
+    height: 25em;
+    overflow: auto;
+    flex: 1 1 0;
+    position: relative;
+    padding: 2vw;
+}
+
+#message {
+    font-family: Georgia;
+    font-style: oblique;
+    padding: 0.5em;
+    font-size: 3vw;
+    color: white;
+    position: relative;
+}
+
+.receiver {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: black;
+    padding: 1px 5px;
+    min-width: 5%;
+    max-width: 70%;
+    display: inline-block;
+    position: relative;
+}
+
+.receiver::before {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    left: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #ccc;
+}
+
+.sender::before {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    right: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #ccc;
+}
+
+.receiver::after {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    left: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+    clear: both;
+}
+
+.sender::after {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    right: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid #282828;
+    clear: both;
+}
+
+.sender {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: 5%;
+    max-width: 60%;
+    display: inline-block;
+    padding: 1px 5px;
+    background: #282828;
+    position: relative;
+    z-index: 100;
+    clear: right;
+}
+
+#msg_pad {
+    padding: 0.5em;
+    position: relative;
+}
+
+#edit {
+    float: right;
+    font-size: 1.2em;
+}
+
+#edet {
+    font-size: 1.4em;
+}
+
+.notty {
+    color: #0063FF;
+}
+
+#icom {
+    font-size: 6vw;
+    flex-grow: 1.0;
+}
+
+#paste {
+    font-family: Georgia;
+    font-style: oblique;
+    flex: 1 1 0;
+}
+
+.friend {
+    padding: 0.125em;
+}
+
+.jak {
+    padding: 0.2em;
+}
+.msg_img {
+    width: 100%;
+    height: 15em;
+}
+
+.msg_aud {
+    width: 100%;
+    height: 8vw;
+    color: #5B6D49;
+}
+
+.aud_panel {
+    width: 100%;
+    display: flex;
+    padding: 0.25em;
+}
+
+.play, .pause {
+    flex-grow: 1.0;
+    font-size: 6vw;
+    top: 1em;
+    padding: 0.3em;
+}
+
+.tape {
+    flex-grow: 1.0;
+    width: 80%;
+    border: 1px solid #A2A2A2;
+    border-radius: 3vw;
+}
+
+.rotor {
+    border-radius: 3vw;
+    height: 2em;
+    width: 2em;
+    background: #ccc;
+    top: 4em;
+    opacity: 0.5;
+}
+
+#rot {
+    float: right;
+}
+
+.pon {
+    flex-grow: 1.0;
+    height: 2em;
+    width: 4.5em;
+    float: right;
+    display: flex;
+}
+
+.fals, .fals1, .fals2, .fals3, .fals4 {
+    flex-grow: 1.0;
+    width: 3px;
+    height: 3em;
+    border-radius: 3vw;
+}
+
+.fals::before, .fals1::before, .fals2::before, .fals3::before, .fals4::before {
+    content: "";
+    position: absolute;
+    width: 2.5px;
+    height: 1.6em;
+    background: #ccc;
+    border-radius: 3vw;
+    top: 8px;
+    opacity: 0.5;
+}
+
+.fals::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 1.2em;
+    background: #ccc;
+    border-radius: 3vw;
+    top: 11px;
+    transform: rotateY(40deg);
+    left: 85px;
+    opacity: 0.5;
+}
+
+.fals1::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 1.2em;
+    background: #ccc;
+    border-radius: 3vw;
+    top: 11px;
+    transform: rotateY(40deg);
+    left: 100px;
+    opacity: 0.5;
+}
+
+.fals2::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 1.2em;
+    background: #ccc;
+    border-radius: 3vw;
+    top: 11px;
+    transform: rotateY(40deg);
+    left: 115px;
+    opacity: 0.5;
+}
+
+.fals3::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 1.2em;
+    background: #ccc;
+    border-radius: 3vw;
+    top: 11px;
+    transform: rotateY(40deg);
+    left: 127px;
+    opacity: 0.5;
+}
+
+.fals4::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 1.2em;
+    background: #ccc;
+    border-radius: 3vw;
+    top: 11px;
+    transform: rotateY(40deg);
+    left: 140px;
+    opacity: 0.5;
+}
+
+video {
+    width: 11em;
+    height: auto;
+    left: -7px;
+}
+
+.msg_vid {
+    border: none;
+    width: 100%;
+    height: 20em;
+}
+
+#icop {
+    font-size: 6vw;
+    flex-grow: 1.0;
+}
+
+#pog {
+    flex-grow: 1.0;
+    width: 4em;
+    padding: 0.3em;
+}
+
+.gob {
+    border-radius: 3vw;
+    font-size: 1.5em;
+    border: #A2A2A2 0.025em solid;
+    background: #6683AF;
+    color: white;
+    text-align: center;
+}
+
+.gog {
+    text-align: center;
+    color: white;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 1em;
+    background: #A2A2A2;
+    opacity: 0.5;
+}
+
+.goj {
+    width: 100%;
+    clear: left;
+    height: auto;
+    top: 0.5em;
+}
+
+.elm3 {
+    height: 17em;
+    overflow: auto;
+    flex: 1 1 0;
+    position: relative;
+}
+
+#two, #three, #one {
+    font-family: Georgia;
+    font-style: oblique;
+    height: 2.5em;
+    box-sizing: border-box;
+    border-radius: 3vw;
+    border: #ccc 0.025em solid;
+}
+
+#joh, #type {
+    border-radius: 2vw;
+    height: 1.5em;
+    font-family: Georgia;
+    font-style: oblique;
+    background: #282828;
+    border: #ccc 0.125em solid;
+    color: #ccc;
+}
+
+#bolo {
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.elm5 {
+    display: inline-block;
+    padding: 1px 5px;
+    background: #282828;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #282828;
+}
+
+.elm6 {
+    display: inline-block;
+    padding: 1px 5px;
+    background: #282828;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #282828;
+}
+
+.zoj {
+    width: 100%;
+    clear: left;
+    height: auto;
+    top: 0.5em;
+}
+
+.elm7 {
+    height: 20em;
+    width: 100%;
+}
+
+.blog_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    text-align: center;
+    border: #ccc 0.25em solid;
+}
+
+.bab {
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 4vw;
+    border-top: #ccc 0.025em solid;
+    border-bottom: #ccc 0.025em solid;
+    padding: 0.25em;
+    background: #282828;
+}
+
+a {
+    text-decoration: none;
+    font-family: Georgia;
+    font-style: oblique;
+    background: #ccc;
+    color: red;
+}
+
+a:hover {
+    background: #282828;
+    color: white;
+}
+
+.blogOpen {
+    height: 30em;
+    overflow: auto;
+    flex: 1 1 0;
+    position: relative;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.kam {
+    padding: .5em;
+    background: none;
+}
+
+.bad, .bads {
+    color: red;
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 4vw;
+    border: #ccc 0.125em solid;
+    padding: 0.25em;
+    border-radius: 3vw;
+}
+
+#dialog7, #blogJon {
+    color: white;
+    font-family: Georgia;
+    font-style: oblique;
+    background: #282828;
+    border: #ccc 0.025em solid;
+    border-radius: 3vw;
+}
+
+.blogmsg, .comt {
+    border-radius: 3vw;
+    border: #ccc 0.125em solid;
+    min-height: 2.5em;
+    background: #282828;
+    width: 70%;
+    float: left;
+}
+
+.seth {
+    background: #282828;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    color: #ccc;
+    text-align: center;
+    padding: 0.1em;
+    float: right;
+    border: #ccc 0.125em solid;
+}
+
+.comf, .comg, #five, .comfy {
+    width: 100%;
+    text-align: center;
+    background: #282828;
+    color: #ccc;
+    border: #ccc 0.125em solid;
+    height: 2.5em;
+    border-radius: 3vw;
+}
+
+.blgmsg {
+    font-family: Georgia;
+    font-style: oblique;
+    border-radius: 3vw;
+    clear: left;
+    border-left: #ccc 0.125em solid;
+    border-right: #ccc 0.125em solid;
+    font-size: 3vw;
+    padding: 0.2em;
+}
+
+.cog {
+    font-family: Georgia;
+    font-style: oblique;
+    border-radius: 3vw;
+    text-align: center;
+    font-size: 3.3vw;
+    width: 100%;
+}
+
+#icam {
+    float: right;
+    font-size: 7vw;
+}
+
+.gab {
+    font-family: Georgia;
+    font-style: oblique;
+    font-size: 3.2vw;
+}
+
+.wasp {
+    position: fixed;
+    margin-left: 0px;
+    left: 80%;
+    bottom: 2%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #282828;
+    border: #ccc 0.025em solid;
+    z-index: 10;
+    color: white;
+    font-size: 6vw;
+}
+
+.waps {
+    position: fixed;
+    margin-left: 0px;
+    left: 80%;
+    bottom: 10%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 3vw;
+    background: #282828;
+    color: white;
+    border: #ccc 0.025em solid;
+    z-index: 10;
+    font-size: 6vw;
+    padding: 0.5em;
+}
+
+.ui-dialog-buttonpane, .ui-dialog-titlebar {
+    font-family: Georgia;
+    font-style: oblique;
+    background: #282828;
+    color: white;
+    border: #ccc 0.025em solid;
+}
+
+.goh {
+    font-family: Georgia;
+    font-style: oblique;
+    background: #282828;
+    color: white;
+    border-top: #ccc 0.025em solid;
+    border-bottom: #ccc 0.025em solid;
+    font-size: 4vw;
+    padding: 0.8em;
+}
+
+.output, .blogpic, .output2 {
+    width: 100%;
+    height: auto;
+}
+
+.panel {
+    background: #282828;
+    border: #ccc 0.025em solid;
+    border-radius: 3vw;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.comts {
+    background: #282828;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    color: #ccc;
+    text-align: center;
+    padding: 0.1em;
+    float: right;
+    border: #ccc 0.125em solid;
+}
+
+.uplod {
+    background: #282828;
+    width: 100%;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.elm8 {
+    padding: 0.5em;
+}
+
+.blige {
+    display: flex;
+    padding: 0.5em;
+    font-family: Georgia;
+    font-style: oblique;
+    color: white;
+}
+
+.blgsg {
+    font-family: Georgia;
+    font-style: oblique;
+    border-radius: 3vw;
+    clear: left;
+    font-size: 2.5vw;
+    padding: 0.2em;
+}
+
+.output2, .blogvid {
+    border: none;
+    padding: 0.1em;
+    clear: left;
+}
+
+.blogvid {
+    width: 99%;
+    height: 25em;
+}
+
+#add {
+    font-size: 4vw;
+    font-family: Georgia;
+    font-style: oblique;
+}
+
+.sendee {
+    font-size: 0.9em;
+    border-top: #ccc 0.125em solid;
+}
+
+.blab {
+    display: flex;
+}
+
+.cof {
+    width: 100%;
+    text-align: center;
+    background: #282828;
+    color: #ccc;
+    height: 2.5em;
+    border-top: #ccc 0.025em solid;
+    border-bottom: #ccc 0.025em solid;
+}

@@ -1,0 +1,279 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-COMPATIBLIBLE" content="ie=edge" />
+
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scal=1.0, user-scalable=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+    <meta http-equiv='Pragma' content="no-cache" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="format-detection" content="password=yes" />
+
+    <meta name="android-mobile-web-app-capable" content="yes" />
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" href="app.css" />
+
+    <link rel="stylesheet" href="jquery.css" />
+
+    <link rel="stylesheet" id="anime" />
+
+    <title> file_upload </title>
+
+</head>
+
+<body>
+
+    <div role="page">
+        <div role="main">
+
+            <div id="pok" hidden></div>
+
+            <div class="jap">
+                <div class="bob" data-role='header'>
+                    <div class="flop">
+                        flashwave
+                    </div>
+                    <div class="flop1">
+
+                        <i class="fa fa-tv" id="icop" onclick="displayTV(), blog()"></i>
+
+                        <div id="pog"></div>
+
+                        <i class="fa fa-users" id="icom" onclick="displayReq()"></i>
+
+                        <div id="pog"></div>
+
+                        <i class="fa fa-cog" id="icok" onclick="sett()"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="elm"></div>
+            <div class="elm2" hidden>
+                <div style="height:2vw"></div>
+                <div class="elm5">
+                    <img class="goj" src="/storage/emulated/0/tile.html/node_modules/Uploads/tmp-1-1659737791160.jpg" onclick="" />
+                    <div class="gog">
+                        FlashMedia
+                    </div>
+                </div>
+                <div class="elm3"></div>
+                <div class="elm4">
+                    <div onclick="createBlog()">
+                        <button class="wasp">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="elm7" hidden></div>
+                <div id="blogForm" hidden>
+
+                    <form id="fum">
+
+                        <select name="type" id="type" required>
+                            <option value="">Select</option>
+                            <option value="Page">Page</option>
+                            <option value="Blog">Blog</option>
+                            <option value="TV">TV</option>
+                            <option value="Group">Group</option>
+                        </select> <br><br>
+
+                        <input type="text" name="one" id="one" placeholder="Name of Blog, TV, Page or Group" required /> <br><br>
+
+                        <input type="email" name="two" id="two" placeholder="Email" required /> <br><br>
+
+                        <input type="text" name="three" id="three" placeholder="website (optional)" /> <br><br>
+
+                        <input type="file" name="four" id="four" hidden accept="image/*" required />
+
+                    </form>
+
+                    <div id="bolo">
+                        *sellest photo for your page, blog, tv or group
+                    </div>
+
+                    <button id="joh">sellect photo</button> <br><br>
+
+                    <button id="five" disabled>Create</button>
+                </div>
+
+            </div>
+            <div class="elm0" hidden>
+
+                <div id="container"></div>
+                <div class="elm1"></div>
+
+                <form id="fom">
+                    <input type="file" name="file" id="file" accept="audio/*,video/*,image/*" hidden />
+                </form>
+
+                <div id="uploadForm">
+
+                    <button class="bob1">
+                        <i class="fa fa-camera" id="icoo" onclick="reck()"></i>
+                    </button>
+
+                    <button class="btn"> <i class="fa fa-play" id="icoo"></i> </button>
+
+                    <div id="bob2">
+                        <div contenteditable="true" id="msg"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <button id="icod" class="wasp">
+                    <i class="fa fa-user-plus" id="ico"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog" hidden>
+
+        <div id="add"></div>
+
+        <br>
+
+        <input type="text" name="user" id="user" placeholder="Enter friends phone number" />
+
+        <br><br>
+
+        <button class="comfy" onclick="addFriend()"> Confirm </button>
+
+    </div>
+
+    <div id="paste" hidden></div>
+    <div id="paste1" hidden></div>
+    <div id="paste2" hidden></div>
+
+    <div id="dialog7" hidden>
+
+        <div class="gab">
+            <b> *Messages is only visible to the owner of this page </b> <div>
+                <b> Response are private and will only be delivered to you </b>
+            </div>
+            <br>
+        </div>
+
+        <div class="blogmsg" contenteditable="true"></div>
+
+        <button class="seth">
+            <b>
+                <i class="fa fa-send"></i>
+            </b>
+        </button>
+
+    </div>
+
+    <div id="blogJon" hidden>
+
+        <div>
+            <b class="ham">
+                *Join now and enjoy the privilege to share posts on this page
+            </b>
+        </div>
+        <br>
+        <div>
+            <button class="comf">
+                <b>
+                    Confirm
+                </b>
+            </button>
+        </div>
+
+    </div>
+
+    <div id="dialog2" hidden>
+
+        <div onclick="window.open('profile.html')">
+            <i class="fa fa-user"></i>
+            Profile
+        </div>
+
+        <br>
+
+        <div>
+            <i class="fa fa-key"></i>
+            Account
+        </div>
+
+        <br>
+
+        <div>
+            <i class="fa fa-comment"></i>
+            Chat
+        </div>
+
+        <br>
+
+        <div>
+            <i class="fa fa-bell"></i>
+            Notification
+        </div>
+
+        <br>
+
+        <div>
+            <i class="fa fa-photo"></i>
+            Theme
+        </div>
+
+        <br>
+
+        <div>
+            <i class="fa fa-cube"></i>
+            Help
+        </div>
+
+        <br>
+
+        <div>
+            <i class="fa fa-sign-out"></i>
+            Log-out
+        </div>
+
+    </div>
+
+    <form id="blogForm1" hidden>
+        <input type="file" name="blogImg" id="blogImg" accept="image/*" />
+    </form>
+
+    <form id="blogForm2" hidden>
+        <input type="file" name="blogVid" id="blogVid" accept="video/*" />
+    </form>
+    <div class="fak" hidden></div>
+
+    <div class="panel" hidden></div>
+    <div class="panel2" hidden></div>
+    <div id="pald" hidden></div>
+
+    <script src="App_main.js"></script>
+    <script src="myapp.js"></script>
+
+</body>
+
+</html>
